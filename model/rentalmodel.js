@@ -24,18 +24,5 @@ export class RentalModel {
         this.allrentals.splice(targetindex, 1)
         this.saveRentals()
     }
-    statusVehicle(targetvehicle) {
-        // const targetVehicle = this.allrentals[targetindex]
-        // if (targetVehicle.status === "unavailable") {
-        //     targetVehicle.status = "available"
-        // }else {
-        //     targetVehicle.status = "unavailable"
-        // }
-        // console.log(this.allrentals)
-        // this.saveVehicles()
-        
 
-        console.log(targetvehicle)
-
-    }
 }

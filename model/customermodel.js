@@ -6,7 +6,6 @@ export class CustomerModel {
     addCustomer(newCustomer) {
         this.allCustomers.push(newCustomer)
         this.saveCustomers()
-        // this.localStorage.clear()
     }
     getallCustomers() {
         return this.allCustomers

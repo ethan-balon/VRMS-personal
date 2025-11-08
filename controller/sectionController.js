@@ -1,4 +1,4 @@
-import { SectionView, LoginView } from "../view/view.js";
+import { SectionView, LoginView } from "../view/sectionView.js";
 
 class SectionController {
     constructor(){

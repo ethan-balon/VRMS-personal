@@ -17,7 +17,6 @@ export class ReservationView {
         html += `<td>${allReservations[i].targetCustomer}</td>`;
         html += `<td>${allReservations[i].targetVehicle}</td>`;
         html += `<td>${allReservations[i].startDate}</td>`;
-        html += `<td><button>update</button></td>`;
         html += `<td><button class="vehicle-delete-btn" data-index="${i}">delete</button></td>`;
         html += `</tr>`;
     }
@@ -25,7 +24,7 @@ export class ReservationView {
 }
     customerValues(allcustomers) {
         const targetcustomer = document.getElementById('reserve_customer');
-        let html = ``;
+        let html = `<option>Select Customer</option>`;
         for (let i = 0; i < allcustomers.length; i++) {
         if (allcustomers[i].status === "active") {
             html += `<option value="${allcustomers[i].fullName}">${allcustomers[i].fullName}</option>`;
@@ -36,7 +35,7 @@ export class ReservationView {
     vehicleValues(allvehicles) {
 
         const targetvehicle = document.getElementById('reserve_vehicle');
-        let html = ``;
+        let html = `<option>Select Vehicle</option>`;
         for (let i = 0; i < allvehicles.length; i++) {
         if (allvehicles[i].status === "available") {
             html += `<option value="${allvehicles[i].vehicleId}">${allvehicles[i].year} ${allvehicles[i].make} ${allvehicles[i].model} - (${allvehicles[i].registrationNumber})</option>`;

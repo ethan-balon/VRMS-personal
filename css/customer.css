@@ -4,19 +4,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
-#vehicle_page {
+#customer_page {
     display: none; /* hidden unless .active */
     padding: 30px;
     background: #f5f7fa;
     min-height: 100vh;
 }
 
-#vehicle_page.active {
+#customer_page.active {
     display: block;
 }
 
-.vehicle-container {
-    max-width: 900px;  /* same as customer */
+.customer-container {
+    max-width: 900px;
     margin: auto;
     background: white;
     padding: 25px;
@@ -24,27 +24,27 @@
     box-shadow: 0 3px 12px rgba(0,0,0,0.15);
 }
 
-#vehicle_form {
+.customer-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
     margin-bottom: 25px;
 }
 
-#vehicle_form label {
+.customer-form label {
     font-size: 14px;
     font-weight: 500;
     color: #333;
 }
 
-#vehicle_form input {
+.customer-form input {
     padding: 8px 10px;
     border-radius: 5px;
     border: 1px solid #bbb;
     font-size: 14px;
 }
 
-#vehicle_form button {
+.customer-form button {
     grid-column: span 2;
     padding: 10px 0;
     border: none;
@@ -57,11 +57,11 @@
     font-weight: 500;
 }
 
-#vehicle_form button:hover {
+.customer-form button:hover {
     background: #0064d4;
 }
 
-.vehicle-table-wrapper {
+.customer-table-wrapper {
     overflow-x: auto;
 }
 
@@ -88,8 +88,23 @@ table tr:hover td {
     background: #fafafa;
 }
 
-/* ===== VEHICLE TABLE BUTTONS ===== */
-.vehicle-update-btn {
+/* ===== ACTION BUTTONS IN CUSTOMER TABLE ===== */
+.customer-status-btn {
+    background-color: #ffc107; /* yellow/orange */
+    color: #333;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.customer-status-btn:hover {
+    background-color: #e0a800;
+}
+
+table button.update {
     background-color: #28a745; /* green */
     color: white;
     border: none;
@@ -100,11 +115,11 @@ table tr:hover td {
     transition: 0.2s;
 }
 
-.vehicle-update-btn:hover {
+table button.update:hover {
     background-color: #218838;
 }
 
-.vehicle-delete-btn {
+.customer-delete-btn {
     background-color: #dc3545; /* red */
     color: white;
     border: none;
@@ -115,6 +130,23 @@ table tr:hover td {
     transition: 0.2s;
 }
 
-.vehicle-delete-btn:hover {
+.customer-delete-btn:hover {
     background-color: #c82333;
+}
+
+
+/* ===== UPDATE BUTTON ===== */
+.customer-update-btn {
+    background-color: #28a745; /* green */
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.customer-update-btn:hover {
+    background-color: #218838;
 }

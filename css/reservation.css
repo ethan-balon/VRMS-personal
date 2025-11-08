@@ -4,19 +4,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
-#vehicle_page {
+#reservation_page {
     display: none; /* hidden unless .active */
     padding: 30px;
     background: #f5f7fa;
     min-height: 100vh;
 }
 
-#vehicle_page.active {
+#reservation_page.active {
     display: block;
 }
 
-.vehicle-container {
-    max-width: 900px;  /* same as customer */
+.reservation-container {
+    max-width: 900px;
     margin: auto;
     background: white;
     padding: 25px;
@@ -24,27 +24,28 @@
     box-shadow: 0 3px 12px rgba(0,0,0,0.15);
 }
 
-#vehicle_form {
+.reservation-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
     margin-bottom: 25px;
 }
 
-#vehicle_form label {
+.reservation-form label {
     font-size: 14px;
     font-weight: 500;
     color: #333;
 }
 
-#vehicle_form input {
+.reservation-form input,
+.reservation-form select {
     padding: 8px 10px;
     border-radius: 5px;
     border: 1px solid #bbb;
     font-size: 14px;
 }
 
-#vehicle_form button {
+.reservation-form button {
     grid-column: span 2;
     padding: 10px 0;
     border: none;
@@ -57,11 +58,11 @@
     font-weight: 500;
 }
 
-#vehicle_form button:hover {
+.reservation-form button:hover {
     background: #0064d4;
 }
 
-.vehicle-table-wrapper {
+.reservation-table-wrapper {
     overflow-x: auto;
 }
 
@@ -88,22 +89,7 @@ table tr:hover td {
     background: #fafafa;
 }
 
-/* ===== VEHICLE TABLE BUTTONS ===== */
-.vehicle-update-btn {
-    background-color: #28a745; /* green */
-    color: white;
-    border: none;
-    padding: 6px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 13px;
-    transition: 0.2s;
-}
-
-.vehicle-update-btn:hover {
-    background-color: #218838;
-}
-
+/* ===== ACTION BUTTONS IN RESERVATION TABLE ===== */
 .vehicle-delete-btn {
     background-color: #dc3545; /* red */
     color: white;

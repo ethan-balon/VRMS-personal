@@ -26,7 +26,7 @@ export class VehicleView {
         html += `<td>${allvehicles[i].mileage}</td>`;
         html += `<td>${allvehicles[i].location}</td>`;
         html += `<td>${allvehicles[i].status}</td>`
-        html += `<td><button>update</button></td>`;
+        html += `<td><button class="vehicle-update-btn">update</button></td>`;
         html += `<td><button class="vehicle-delete-btn" data-index="${i}">delete</button></td>`;
         html += `</tr>`;
     }

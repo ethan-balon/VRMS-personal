@@ -4,19 +4,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
-#vehicle_page {
+#rental_page {
     display: none; /* hidden unless .active */
     padding: 30px;
     background: #f5f7fa;
     min-height: 100vh;
 }
 
-#vehicle_page.active {
+#rental_page.active {
     display: block;
 }
 
-.vehicle-container {
-    max-width: 900px;  /* same as customer */
+.rental-container {
+    max-width: 900px;
     margin: auto;
     background: white;
     padding: 25px;
@@ -24,27 +24,28 @@
     box-shadow: 0 3px 12px rgba(0,0,0,0.15);
 }
 
-#vehicle_form {
+.rental-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
     margin-bottom: 25px;
 }
 
-#vehicle_form label {
+.rental-form label {
     font-size: 14px;
     font-weight: 500;
     color: #333;
 }
 
-#vehicle_form input {
+.rental-form input,
+.rental-form select {
     padding: 8px 10px;
     border-radius: 5px;
     border: 1px solid #bbb;
     font-size: 14px;
 }
 
-#vehicle_form button {
+.rental-form button {
     grid-column: span 2;
     padding: 10px 0;
     border: none;
@@ -57,11 +58,11 @@
     font-weight: 500;
 }
 
-#vehicle_form button:hover {
+.rental-form button:hover {
     background: #0064d4;
 }
 
-.vehicle-table-wrapper {
+.rental-table-wrapper {
     overflow-x: auto;
 }
 
@@ -88,7 +89,7 @@ table tr:hover td {
     background: #fafafa;
 }
 
-/* ===== VEHICLE TABLE BUTTONS ===== */
+/* ===== ACTION BUTTONS IN RENTAL TABLE ===== */
 .vehicle-update-btn {
     background-color: #28a745; /* green */
     color: white;

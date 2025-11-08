@@ -16,8 +16,8 @@ export class CustomerView {
                 html += `<td>${allCustomers[i].phoneNumber}</td>`
                 html += `<td>${allCustomers[i].date}</td>`
                 html += `<td>${allCustomers[i].status}</td>`
-                html += `<td><button class="customer-status-btn" data-index="${i}">change status</button></td>`
-                html += `<td><button>update</button></td>`;
+                html += `<td><button class="customer-status-btn" data-index="${i}">status</button></td>`
+                html += `<td><button class="customer-update-btn">update</button></td>`;
                 html += `<td><button class="customer-delete-btn" data-index="${i}">delete</button></td>`;
                 html += `</tr>`
             }
